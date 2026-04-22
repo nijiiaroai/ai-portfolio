@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claude AIを活用してゲーム・サイト・コンテンツ・自動化ツールを開発するポートフォリオ">
+  <title>AI Portfolio | Claude AIで形にする</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ローディング -->
+  <div class="loader" id="loader">
+    <div class="loader-inner"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark"></span>
+        AI Portfolio
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-circle c1"></div>
+        <div class="hero-circle c2"></div>
+        <div class="hero-circle c3"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Claude AI × 実績集</p>
+        <h1 class="reveal">
+          AIで、<em>アイデア</em>を<br>
+          形にする。
+        </h1>
+        <p class="hero-lead reveal">
+          Claude AIを活用してゲーム・LP・コンテンツ・自動化ツールを開発。<br>
+          プロンプトエンジニアリングの実践ポートフォリオです。
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#works" class="btn btn-primary">実績を見る</a>
+          <a href="#contact" class="btn btn-ghost">お問い合わせ</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num">6</span><span class="stat-label">Projects</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Categories</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Claude AI</span></div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">About</p>
+          <h2>使用ツール &amp; スキル</h2>
+          <div class="ornament"></div>
+          <p class="section-desc">Claude AIを中心に、様々なドメインで成果物を制作しています。プロンプトエンジニアリングの技術を活かし、ゲーム開発からコンテンツ制作、業務自動化まで幅広く対応します。</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>アイデアを素早く形にし、実用的な成果物として届けることを大切にしています。Claude AIの特性を深く理解し、複雑なロジックも自然言語で実装へ落とし込みます。</p>
+            <p>ゲームエンジン・スクレイピング・LP制作・コンテンツ執筆など、ジャンルを問わず対応可能です。</p>
+          </div>
+          <ul class="tools-grid reveal">
+            <li class="tool-card"><span class="tool-dot"></span>Claude 3.7 Sonnet</li>
+            <li class="tool-card"><span class="tool-dot"></span>Claude Code</li>
+            <li class="tool-card"><span class="tool-dot"></span>Prompt Engineering</li>
+            <li class="tool-card"><span class="tool-dot"></span>HTML / CSS / JS</li>
+            <li class="tool-card"><span class="tool-dot"></span>Web Scraping</li>
+            <li class="tool-card"><span class="tool-dot"></span>ゲーム開発</li>
+            <li class="tool-card"><span class="tool-dot"></span>LP / Web制作</li>
+            <li class="tool-card"><span class="tool-dot"></span>コンテンツ制作</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Works</p>
+          <h2>AI活用 実績</h2>
+          <div class="ornament"></div>
+          <p class="section-desc">Claude AIを使って制作したプロジェクト一覧。カテゴリで絞り込めます。</p>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab">すべて</button>
+          <button class="filter-btn" data-filter="game" role="tab">ゲーム開発</button>
+          <button class="filter-btn" data-filter="web" role="tab">Web制作</button>
+          <button class="filter-btn" data-filter="content" role="tab">コンテンツ</button>
+          <button class="filter-btn" data-filter="auto" role="tab">自動化</button>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+
+          <article class="card reveal" data-category="game">
+            <div class="card-thumb" data-src="images/tetris.png" data-title="テトリス">
+              <img src="images/tetris.png" alt="テトリス" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">ゲーム開発</p>
+              <h3>テトリス</h3>
+              <p>Claude AIにプロンプトのみで指示し、ブラウザで動くテトリスを開発。スコア・レベル・NEXTブロック表示まで完全実装。</p>
+              <ul class="tags">
+                <li>Claude</li><li>JavaScript</li><li>Canvas</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="game" style="--delay:80ms">
+            <div class="card-thumb" data-src="images/puyo.png" data-title="ぷよぷよ">
+              <img src="images/puyo.png" alt="ぷよぷよ" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">ゲーム開発</p>
+              <h3>ぷよぷよ</h3>
+              <p>連鎖・スコア・レベルアップロジックを含むぷよぷよをAIで実装。キャラクター表情アニメーションも再現。</p>
+              <ul class="tags">
+                <li>Claude</li><li>JavaScript</li><li>ゲームロジック</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="web" style="--delay:160ms">
+            <div class="card-thumb" data-src="images/dating-guide.png" data-title="婚活ガイドサイト">
+              <img src="images/dating-guide.png" alt="婚活ガイドサイト" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">Web制作 / LP</p>
+              <h3>婚活ガイドサイト</h3>
+              <p>35歳以上の女性向けマッチングアプリ完全ガイドのLPをAIで制作。ナビゲーション・イラスト・構成を含む。</p>
+              <ul class="tags">
+                <li>Claude</li><li>LP制作</li><li>HTML/CSS</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="content" style="--delay:240ms">
+            <div class="card-thumb" data-src="images/temple-dx.png" data-title="寺院DX note記事">
+              <img src="images/temple-dx.png" alt="寺院DX note記事" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">コンテンツ制作</p>
+              <h3>寺院DX note記事</h3>
+              <p>「AIが紡ぐ効率の先にある質の向上」をテーマに、お寺のデジタル化をテーマにしたnote記事をAIで執筆。</p>
+              <ul class="tags">
+                <li>Claude</li><li>note</li><li>ライティング</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="content" style="--delay:320ms">
+            <div class="card-thumb" data-src="images/line-plan.png" data-title="公式LINE導入計画書">
+              <img src="images/line-plan.png" alt="公式LINE導入計画書" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">コンテンツ / 企画</p>
+              <h3>公式LINE導入計画書</h3>
+              <p>お寺向けの公式LINEコミュニティ導入提案書をAIで作成。背景・必要性・ロードマップまで体系的に構成。</p>
+              <ul class="tags">
+                <li>Claude</li><li>提案書</li><li>LINE活用</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="auto" style="--delay:400ms">
+            <div class="card-thumb" data-src="images/scraping.png" data-title="Webスクレイピング自動化">
+              <img src="images/scraping.png" alt="Webスクレイピング自動化" loading="lazy">
+              <div class="card-overlay"><span class="zoom-icon">+</span></div>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">自動化 / スクレイピング</p>
+              <h3>Webスクレイピング自動化</h3>
+              <p>Yahoo! Japanニュースの見出しをClaude AIが自動取得・整形・一覧表示。ブラウザ拡張との連携デモ。</p>
+              <ul class="tags">
+                <li>Claude</li><li>スクレイピング</li><li>自動化</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Process</p>
+          <h2>制作の流れ</h2>
+          <div class="ornament"></div>
+        </div>
+        <ol class="process-list">
+          <li class="process-item reveal">
+            <div class="process-num">01</div>
+            <div class="process-body">
+              <h3>要件整理 &amp; プロンプト設計</h3>
+              <p>作りたいものの目的・対象ユーザー・機能要件を言語化し、Claude AIへの最適な指示文を設計します。</p>
+            </div>
+          </li>
+          <li class="process-item reveal" style="--delay:120ms">
+            <div class="process-num">02</div>
+            <div class="process-body">
+              <h3>反復生成 &amp; 検証</h3>
+              <p>AIが生成したコードや文章をブラウザ・実環境で即検証。フィードバックをプロンプトに反映しながら高速に改善します。</p>
+            </div>
+          </li>
+          <li class="process-item reveal" style="--delay:240ms">
+            <div class="process-num">03</div>
+            <div class="process-body">
+              <h3>納品 &amp; デプロイ</h3>
+              <p>完成した成果物を本番環境へデプロイ。GitHub Pages・Vercel・Notionなど用途に応じた手段で公開します。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <p class="label" style="color:var(--green-light)">Contact</p>
+          <h2>お問い合わせ</h2>
+          <p>AI活用のご相談・制作依頼はお気軽にどうぞ。</p>
+          <a href="mailto:your@email.com" class="btn btn-white">メールを送る</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo"><span class="logo-mark"></span>AI Portfolio</span>
+      <p>© 2026 AI Portfolio — Built with <span style="color:var(--green)">Claude AI</span></p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="画像プレビュー">
+    <button class="lb-close" id="lbClose" aria-label="閉じる">&times;</button>
+    <div class="lb-content">
+      <img src="" alt="" id="lbImg">
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
